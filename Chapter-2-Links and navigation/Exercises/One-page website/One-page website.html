@@ -1,0 +1,70 @@
+<!-- One-page website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-Page Website</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="One-page.css" />
+</head>
+<body>
+    <header>
+        <h1 class="mainheading">JESSIE</h1>
+        <!-- A nav bar at the top which allows the user to quickly navigate to sections further down the page (anchor Ids) -->
+        <nav>
+            <a href="#overview" class="link-overview">Overview</a> |
+            <a href="#cast" class="link-cast">Cast</a> |
+            <a href="#reviews" class="link-reviews">Reviews</a> |
+            <a href="#external" class="link-external">Official Website</a>
+        </nav>
+    </header>
+
+    <!-- Organizing the overview,cast,reviews etc in sections using <section> -->
+    <!-- Using the id and class section to style the webpage -->
+    <section id="overview">
+        <h2 class="subheading">Overview</h2>
+        <p>
+            Jessie is an American comedy television series that aired on Disney Channel from September 30, 2011, to October 16, 2015. Created by Pamela Eells O'Connell, the show follows a small-town Texas girl named Jessie Prescott, played by Debby Ryan, who moves to New York City to pursue her dreams of becoming an actress. Instead, she lands a job as a nanny for the wealthy Ross family. The Ross family lives in a luxurious penthouse in a Manhattan skyscraper. The parents, Morgan and Christina Ross, are often away due to their careers in film and fashion, leaving Jessie with the responsibilities.
+        </p>
+    </section>
+
+    <section id="cast">
+        <h2 class="subheading">Cast</h2>
+
+        <!-- using the unordered list tag to list the casts -->
+        <ul>
+            <li>Jessie (Debby Ryan) takes care of four diverse and spirited children:</li>
+            <li>Emma Ross (Peyton List) – the only biological child, fashion-conscious and social.</li>
+            <li>Luke Ross (Cameron Boyce) – mischievous and flirtatious.</li>
+            <li>Ravi Ross (Karan Brar) – an intelligent boy from India with a pet lizard named Mr. Kipling.</li>
+            <li>Zuri Ross (Skai Jackson) – a witty and imaginative young girl adopted from Uganda.</li>
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2 class="subheading">Reviews</h2>
+        <p>
+            <strong>Plugged In</strong> recognized its entertainment value but noted it was <i>"a tinge more cynical and a touch more crude"</i> than expected from a typical Disney nanny show. <br />
+            On <strong>IMDb</strong>, many users gave positive feedback, with one stating that Jessie is <i>"filled with magic and entertainment"</i> and suitable for all ages. <br />
+            However, <strong>TheTopTens</strong> offered a contrasting view, claiming the show <i>"sends out a terrible message to all children"</i>.<br />
+            Similarly, a critical blog post from <strong>Kayfil.WordPress.com</strong> expressed frustration with the characters’ disrespectful behavior, stating, <i>"the complete lack of respect towards all adults is awful"</i>.<br />
+            These varied perspectives highlight how Jessie appealed to a broad young audience while also raising concerns among more critical viewers.
+        </p>
+    </section>
+
+    <section id="external">
+        <!-- A link to the actual website of the series  -->
+        <h2 class="subheading">Official Website</h2>
+        <p>
+            Visit the official page to stream: 
+            <!-- link styled as a button. -->
+            <a href="https://www.disneyplus.com/series/jessie/6M0zNJpnnBii" class="btn-link" target="_blank">Watch Jessie on Disney+</a>
+        </p>
+    </section>
+</body>
+</html>
