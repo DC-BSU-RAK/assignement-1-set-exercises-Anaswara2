@@ -1,0 +1,30 @@
+/* Div A - purple border +red shadow */
+#A {
+    border-color: purple;
+    box-shadow: 20px 20px 20px red;
+  }
+  
+  /* Div B - neon green border + inset black shadow */
+  #B {
+    border-color: lime;
+    box-shadow: inset 20px 20px 20px black;
+  }
+  
+  /* Div C - multi-border using box-shadow */
+  #C {
+    border: none;
+    border-radius: 30px;
+    box-shadow:
+      0 0 0 4px orange,
+      0 0 0 12px blue,
+      0 0 0 20px red,
+      0 0 0 28px green;
+  }
+  
+  /* Div D - text-shadow layered */
+  #D {
+    border-color: brown;
+    text-shadow:
+      2px 2px 1px black,
+      6px 6px 1px lightgray;
+  }
