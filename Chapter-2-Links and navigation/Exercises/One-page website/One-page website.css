@@ -1,0 +1,83 @@
+/* css of one-page website  */
+
+body{
+    background-color:rgb(249, 201, 231)
+}
+
+.mainheading{
+    color: rgb(40, 6, 72);
+    font-family: "Boldonse", system-ui;
+    text-align: center;
+}
+
+.link-overview {
+    color: #4d0746; 
+}
+
+.link-info {
+    color: #4d0746; 
+}
+
+.link-cast {
+    color: #4d0746; 
+}
+
+.link-characters {
+    color: #4d0746;
+}
+
+.link-reviews {
+    color: #4d0746; 
+}
+
+.link-external {
+    color: #4d0746; 
+}
+
+hr {
+    height: 2px;
+    background-color: #000;
+}
+
+#P01 {
+    color: black;
+    font-family: "Playfair Display", serif;
+}
+
+.subheading{
+    font-family: "Gravitas One", serif;
+    color: #4d0746;
+}
+
+nav {
+    background-color: #ffecec;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d33;
+}
+  
+.btn-link {
+    background-color: #4d0746;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #7b156d;
+}
