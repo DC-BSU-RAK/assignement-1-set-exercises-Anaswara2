@@ -1,0 +1,23 @@
+/* css stylesheet for the recipe page */
+body {
+    background-color: #eed8c9; /* to give the webpage a background-color */
+}
+h1{
+    background-color: rgb(57, 9, 9);
+    color: #eed8c9;
+}
+
+.S01 {
+    border: 2px solid #32060d; 
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px; /* for rounded corners */ 
+}
+
+.recipe-image {
+    float: right;
+    width: 300px;
+    height: auto;
+    border: 3px solid #510e0e;
+    border-radius: 8px;
+}
