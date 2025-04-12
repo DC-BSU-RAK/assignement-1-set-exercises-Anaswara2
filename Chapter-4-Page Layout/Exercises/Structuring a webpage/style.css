@@ -1,0 +1,93 @@
+/* css of Structuring a webpage html file  */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #000000;
+  }
+  
+  header {
+    background-color: #17072b;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: white;
+    border-bottom: 4px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 40px;
+  }
+  
+  .welcome {
+    flex: 2;
+  }
+  
+  .welcome h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .welcome img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  aside {
+    flex: 1;
+    background-color: #172d67;
+    color: white;
+    padding: 20px;
+  }
+  
+
+  aside ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .images {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .images img {
+    width: 48%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #8c15e9;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+  }
