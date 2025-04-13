@@ -1,0 +1,94 @@
+/* CSS for the Study planner (Bonus - Optional) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page container for the footer */
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f5ef;
+  color: #2e2e2e;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #5c5b8e;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background-color: #747fa5;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0.75rem 1.25rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1; /* Push footer down */
+}
+
+/* Columns */
+.column {
+  flex: 1;
+  background-color: #fffdf7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* Button */
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #976c6c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4c7b55;
+}
+
+/* Footer */
+footer {
+  background-color: #5e5b8e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
