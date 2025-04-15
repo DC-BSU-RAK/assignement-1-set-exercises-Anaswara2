@@ -1,0 +1,146 @@
+/* style.css */
+
+/* body styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('download.jpg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    overflow: hidden; 
+}
+
+/* Header styling */
+header {
+    text-align: left;
+    padding: 1rem;
+}
+
+/* Logo styling inside header */
+.logo {
+    background: rgb(119, 110, 165); /* Purple background */
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Main container with flexbox layout */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* Left column for text-to-speech */
+.left-column {
+    width: 35%;
+    padding: 1rem;
+}
+
+/* Textarea for typing speech text */
+.left-column textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+    resize: none;
+    font-family: inherit;
+}
+
+/* Button for speaking text */
+#sayButton {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgb(12, 13, 67); /* Dark blue */
+    color: white;
+    border: 4px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for say button */
+#sayButton:hover {
+    transform: scale(1.1);
+}
+
+/* Right column for soundboard samples */
+.right-column {
+    width: 60%;
+    text-align: center;
+}
+
+/* Title for the sample bank section */
+#sampleBankTitle {
+    margin-bottom: 1rem;
+    color: rgb(70, 20, 220); /* Blue-purple tone */
+    font-weight: 600;
+    font-size: 1.5rem;
+    background: white;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+}
+
+/* Grid container for sample buttons */
+#sampleGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; /* Space between buttons */
+}
+
+/* Style for each sample button */
+.sample-button {
+    background-color: white;
+    padding: 1.5rem;
+    border: 5px solid rgb(61, 14, 119); /* Deep purple border */
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for sample buttons */
+.sample-button:hover {
+    background-color: rgb(133, 72, 161); /* Light purple */
+    color: white;
+}
+
+.sample-duration {
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Container for navigation buttons */
+.nav-buttons {
+    margin-top: 1rem;
+}
+
+/* Style for nav arrow buttons */
+.nav-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for nav buttons */
+.nav-btn:hover {
+    background-color: rgb(149, 96, 192); /* Purple tone */
+    color: white;
+}
+
+/* Initially hide the left navigation button */
+#prevPage {
+    display: none;
+}
