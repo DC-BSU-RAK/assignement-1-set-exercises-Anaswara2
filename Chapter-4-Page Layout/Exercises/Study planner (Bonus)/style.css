@@ -1,94 +1,122 @@
-/* CSS for the Study planner (Bonus - Optional) */
+/* CSS for Study planner */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Page container for the footer */
-body, html {
-  height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f5ef;
-  color: #2e2e2e;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* Sets the background gradient for the entire page */
+body {
+  background: linear-gradient(135deg, #2b4975, #a16f86); /* Custom gradient */
+  color: #333; 
+  line-height: 1.6; 
+  padding: 20px;
 }
 
-/* Header */
+/* Header  */
+/* Styles the top header with rounded corners and center alignment */
 header {
-  background-color: #5c5b8e;
-  color: white;
-  padding: 1.5rem;
+  text-align: center;
+  padding: 40px 20px;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/*  Navigation Menu  */
+/* Styles the navigation background and layout */
+nav {
+  background: #bea4a5;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  border-radius: 12px;
   text-align: center;
 }
 
-/* Navigation */
-nav {
-  background-color: #747fa5;
-}
-
+/* Removes list styling and aligns items horizontally */
 nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  list-style: none;
+  gap: 30px;
 }
 
-nav ul li {
-  margin: 0.75rem 1.25rem;
-}
-
-nav ul li a {
+/* Navigation links styling */
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+/* Hover effect for navigation links */
+nav a:hover {
+  color: #ffccbc;
 }
 
-/* Main Content */
+/* Main Layout */
+/* Flexible layout for three-column design */
 main {
   display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  flex: 1; /* Push footer down */
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Columns */
+/* Each section styled as a card */
 .column {
   flex: 1;
-  background-color: #fffdf7;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  min-width: 280px;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Soft shadow effect */
 }
 
-/* Button */
+/* Section headers inside columns */
+h2 {
+  color: #00384f;
+  margin-bottom: 10px;
+}
+
+/* Bullet lists inside columns */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling  */
 button {
-  padding: 0.6rem 1.2rem;
-  background-color: #976c6c;
+  background: #6a1b9a;
   color: white;
   border: none;
-  border-radius: 6px;
-  margin-top: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
+/* Button hover effect */
 button:hover {
-  background-color: #4c7b55;
+  background: #9c27b0;
 }
 
-/* Footer */
+/* Footer*/
 footer {
-  background-color: #5e5b8e;
-  color: white;
+  margin-top: 40px;
   text-align: center;
-  padding: 1rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* Adjusts layout for smaller screens */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; 
+  }
 }
