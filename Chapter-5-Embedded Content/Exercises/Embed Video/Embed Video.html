@@ -1,68 +1,84 @@
-<!-- Embed Video  -->
+<!-- Embed Video -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Embedded Video</title>
+
+  <!-- Google font for a cursive, elegant look -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
-  <!-- I have used internal css here  -->
+  <!-- Internal CSS styling starts here -->
   <style>
+    /* Style the whole page */
     body {
       margin: 0;
       height: 100vh;
       display: flex;
-      /* aligned the video and texts in the centre  */
+
+      /* Center the video and text both vertically and horizontally */
       align-items: center;
       justify-content: center;
-      background-color: #151640;
-      font-family: "Dancing Script", cursive;
+
+      background-color: #151640; 
+      font-family: "Dancing Script", cursive; 
     }
 
+    /* Style the main container for the video and text */
     .video1 {
-      border: 8px solid #d3a5e8;
-      border-radius: 20px;
-      padding: 30px;
-      background-color: #c5a5e8;
+      border: 8px solid #d3a5e8;         
+      border-radius: 20px;               
+      padding: 30px;                  
+      background-color: #c5a5e8;         
       text-align: center;
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
-      max-width: 90vw;
-      max-height: 90vh;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3); 
+      max-width: 90vw;                  
+      max-height: 90vh;                
     }
 
+    /* Style the video element */
     video {
-      width: 100%;
+      width: 100%;                      
       height: auto;
-      max-height: 70vh;
+      max-height: 70vh;                  
     }
 
+    /* Subtitle text */
     h2 {
       font-size: 30px;
-      color: #720052;
+      color: #720052;                   
       margin: 0;
     }
 
+    /* Title text */
     h1 {
       font-size: 50px;
-      color: #000;
-      margin: 10px 0 25px;
+      color: #000;                       
+      margin: 10px 0 25px;               
     }
   </style>
-
 </head>
+
 <body>
 
+  <!-- Main video container -->
   <div class="video1">
+    <!-- Subheading describing the theme -->
     <h2>A trip to Paradise on Earth</h2>
+
+    <!-- Main heading showing destination -->
     <h1>Switzerland</h1>
-    <!-- the video loops and it has a relevant poster image -->
+
+    <!-- Embedded video with looping, autoplay, mute, controls, and a fallback poster image -->
     <video 
-      src="Switzerland.mp4 "
-      poster="Switzerland.jpg" 
-      loop 
-      autoplay 
-      muted 
-      controls>
+      src="Switzerland.mp4"     
+      poster="Switzerland.jpg"   
+      loop                       
+      autoplay                   
+      muted                   
+      controls
+    >
+      <!-- Fallback text for older browsers -->
       Your browser does not support the video tag.
     </video>
   </div>
