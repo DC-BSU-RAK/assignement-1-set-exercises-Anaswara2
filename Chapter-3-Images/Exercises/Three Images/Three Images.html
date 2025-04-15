@@ -1,34 +1,50 @@
+<!-- Three images  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Nature Gallery</title>
+
+  <!-- Google Fonts for custom typography -->
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
   
-  <!-- I have used internal CSS for this program -->
+  <!-- Internal CSS styling -->
   <style>
+    /* Basic page styling */
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background: #4e7a57;
+      background: #4e7a57; /* forest green background */
+      margin: 0;
+      padding: 0;
     }
 
+    /* Container for the image gallery */
     .gallery {
       margin: 20px auto;
       max-width: 900px;
     }
 
+    /* Wrapper for each image */
     .image {
       margin-bottom: 40px;
     }
 
+    /* Image styles: grayscale by default, smooth transition to color on hover */
     img {
-      filter: grayscale(40%) contrast(110%) brightness(1.1);
+      filter: grayscale(100%);
+      transition: filter 0.5s ease;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
+    /* On hover, image becomes colorful */
+    img:hover {
+      filter: grayscale(0%);
+    }
+
+    /* Caption text below each image */
     .caption {
       font-size: 20px;
       color: #ebd4d4;
@@ -36,97 +52,112 @@
       font-family: "Crimson Text", serif;
     }
 
-    h1{
+    /* Main title styling */
+    h1 {
       font-family: "Special Gothic Expanded One", sans-serif;
       color: rgb(10, 61, 17);
+      margin-top: 20px;
     }
 
+    /* Subheading style for the hover instruction */
+    h2 {
+      font-family: "Crimson Text", serif;
+      color: #f3e8e8;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+
+    /* Navigation bar styling */
     nav {
-    background-color: #ffecec;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
+      background-color: #ffecec;
+      padding: 10px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
     }
     
+    /* Navigation links styling */
     nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
     }
-    
-    nav a:hover {
-    color: #d33;
 
+    /* Navigation link hover color */
+    nav a:hover {
+      color: #d33;
     }
-  
   </style>
 </head>
 
 <body>
-  <!-- Main heading -->
+  <!-- Main page heading -->
   <h1>Nature</h1>
-  <!-- a navigation link to each image  -->
-    <nav>
-      <a href="#image1">Image 1</a> |
-      <a href="#image2">Image 2</a> |
-      <a href="#image3">Image 3</a>
-    </nav>
+
+  <!-- Subheading to indicate hover interaction -->
+  <h2>Hover to show color</h2>
+
+  <!-- Navigation bar linking to each image section -->
+  <nav>
+    <a href="#image1">Image 1</a> |
+    <a href="#image2">Image 2</a> |
+    <a href="#image3">Image 3</a>
+  </nav>
   
+  <!-- Main gallery container -->
   <div class="gallery">
-    <!-- Image 1 -->
+    
+    <!-- Image 1 section -->
     <section id="image1">
-    <div class="image">
-
-      <img 
-        src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Orange Flowers in the Field"
-        width="600"
-        height="400"
-        title="Orange Flowers Field"
-      >
-      <!-- information on its copyright license -->
-      <div class="caption">
-        Photo by Henry Be on Unsplash<br>
+      <div class="image">
+        <img 
+          src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Orange Flowers in the Field"
+          width="600"
+          height="400"
+          title="Orange Flowers Field"
+        >
+        <!-- Image credit -->
+        <div class="caption">
+          Photo by Henry Be on Unsplash<br>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-    <!-- Image 2 -->
+    <!-- Image 2 section -->
     <section id="image2">
-    <div class="image">
-      <img 
-        src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Foggy Mountain Summit"
-        width="600"
-        height="400"
-        title="Foggy Mountain Summit"
-      >
-      <!-- information on its copyright license -->
-      <div class="caption">
-        Photo by v2osk on Unsplash<br>
+      <div class="image">
+        <img 
+          src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Foggy Mountain Summit"
+          width="600"
+          height="400"
+          title="Foggy Mountain Summit"
+        >
+        <!-- Image credit -->
+        <div class="caption">
+          Photo by v2osk on Unsplash<br>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-    <!-- Image 3 -->
+    <!-- Image 3 section -->
     <section id="image3">
-    <div class="image">
-      <img 
-        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Beautiful Woodland Path"
-        width="600"
-        height="400"
-        title="Beautiful Woodland Path"
-      >
-      <!-- information on its copyright license -->
-      <div class="caption">
-        Photo by Lukasz Szmigiel on Unsplash<br>
+      <div class="image">
+        <img 
+          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Beautiful Woodland Path"
+          width="600"
+          height="400"
+          title="Beautiful Woodland Path"
+        >
+        <!-- Image credit -->
+        <div class="caption">
+          Photo by Lukasz Szmigiel on Unsplash<br>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   </div>
-
 </body>
 </html>
