@@ -1,0 +1,48 @@
+<!-- Alan Partridge Soundboard (Bonus - Optional) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alan Partridge Soundboard</title>
+
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header section with logo/title -->
+  <header>
+    <h1><span class="logo">SOUNDBOARD</span></h1>
+  </header>
+
+  <!-- Main container with two columns -->
+  <main>
+    
+    <!-- Left column for Text-to-Speech feature -->
+    <section class="left-column">
+      <!-- Input area for typing text -->
+      <textarea id="ttsInput" placeholder="Type Here"></textarea>
+      <!-- Button to trigger speech synthesis -->
+      <button id="sayButton">Say it</button>
+    </section>
+
+    <!-- Right column for the audio samples -->
+    <section class="right-column">
+      <!-- Title indicating audio sample section -->
+      <h2 id="sampleBankTitle">Click the audio to play</h2>
+
+      <!-- Grid container for sample buttons -->
+      <div id="sampleGrid"></div>
+
+      <!-- Navigation arrows for paging through samples -->
+      <div class="nav-buttons">
+        <button id="prevPage" class="nav-btn">⬅</button>
+        <button id="nextPage" class="nav-btn">➡</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Link to external JavaScript file -->
+  <script src="index.js"></script>
+</body>
+</html>
