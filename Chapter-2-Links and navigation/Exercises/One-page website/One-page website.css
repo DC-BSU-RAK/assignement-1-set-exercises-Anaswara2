@@ -1,83 +1,79 @@
-/* css of one-page website  */
+/* CSS for one-page website */
 
-body{
-    background-color:rgb(249, 201, 231)
+/* Background color for the entire page */
+body {
+    background-color: rgb(249, 201, 231); /* Light pink background */
 }
 
-.mainheading{
-    color: rgb(40, 6, 72);
-    font-family: "Boldonse", system-ui;
-    text-align: center;
+/* Main heading styling */
+.mainheading {
+    color: rgb(40, 6, 72); /* Dark purple color for the main heading */
+    font-family: "Boldonse", system-ui; 
+    text-align: center; 
 }
 
-.link-overview {
-    color: #4d0746; 
-}
-
-.link-info {
-    color: #4d0746; 
-}
-
-.link-cast {
-    color: #4d0746; 
-}
-
-.link-characters {
-    color: #4d0746;
-}
-
-.link-reviews {
-    color: #4d0746; 
-}
-
+/* Styling for specific links (overview, info, etc.) */
+.link-overview, 
+.link-info, 
+.link-cast, 
+.link-characters, 
+.link-reviews, 
 .link-external {
-    color: #4d0746; 
+    color: #4d0746; /* Dark purple color for all link classes */
 }
 
+/* Horizontal line styling */
 hr {
-    height: 2px;
-    background-color: #000;
+    height: 2px; 
+    background-color: #000; /* Black color for the line */
 }
 
+/* Container styling for the content */
 #P01 {
-    color: black;
-    font-family: "Playfair Display", serif;
+    color: black; /* Set text color to black */
+    font-family: "Playfair Display", serif; /* Serif font for the content */
 }
 
-.subheading{
-    font-family: "Gravitas One", serif;
-    color: #4d0746;
+/* Subheading styling */
+.subheading {
+    font-family: "Gravitas One", serif; /* Serif font for subheadings */
+    color: #4d0746; /* Dark purple color for subheadings */
 }
 
+/* Navigation bar styling */
 nav {
-    background-color: #ffecec;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
+    background-color: #ffecec; /* Light pink background for the nav bar */
+    padding: 10px; 
+    text-align: center; /* Center-align the nav items */
+    font-family: 'Playfair Display', serif; /* Serif font for nav items */
 }
 
+/* Navigation link styling */
 nav a {
-    margin: 0 15px;
+    margin: 0 15px; 
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #333; /* gray text color for links */
+    font-weight: bold; /* Bold text for nav links */
 }
 
+/* Hover effect for navigation links */
 nav a:hover {
-    color: #d33;
-}
-  
-.btn-link {
-    background-color: #4d0746;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+    color: #d33; /* Change color to red when hovered */
 }
 
+/* Styling for buttons */
+.btn-link {
+    background-color: #4d0746; /* Dark purple background for the button */
+    color: white; /* White text color */
+    padding: 10px 20px; 
+    border-radius: 6px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the button text */
+    font-weight: bold; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for buttons */
 .btn-link:hover {
-    background-color: #7b156d;
+    background-color: #7b156d; /* Change button color on hover */
 }
