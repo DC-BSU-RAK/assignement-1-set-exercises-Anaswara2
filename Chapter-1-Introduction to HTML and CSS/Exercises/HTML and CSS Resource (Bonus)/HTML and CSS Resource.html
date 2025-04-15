@@ -6,74 +6,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML and CSS Resource (Bonus)</title>
-    <!-- adding fonts to headings and text -->
+
+    <!-- Google Fonts for styling headings and text -->
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-    <!-- linking the css file to this html file  -->
+
+    <!-- Linking external CSS file -->
     <link rel="stylesheet" href="bonus1.css">
 </head>
 
 <body>
-    <!-- navigation links- scrolls to the section when clicked -->
+    <!-- Navigation links to scroll to sections using anchor tags -->
     <div class="nav-links">
         <a href="#html-tags">HTML Tags</a> | 
         <a href="#css-tags">CSS Tags</a>
     </div>
 
-    <!-- id selector used to style to chosen sections -->
+    <!-- Main container with id selector for styling -->
     <div id="P01"> 
 
-    <h1 id="html-tags">HTML Tags</h1>
-    <h4>"Tags" provide web browsers with instructions about the web page, such as where to display images, and how the document is structured.</h4>
-    <hr>
-    <h3> Headings : &lt;h1&gt; - &lt;h6&gt;</h3>
-    <p><i>This Tag is used to define HTML headings in different sizes.</i></p>
-    <p>example:</p>
+        <!-- HTML TAGS SECTION -->
+        <h1 id="html-tags">HTML Tags</h1>
+        <h4>"Tags" provide web browsers with instructions about the web page, such as where to display images, and how the document is structured.</h4>
+        <hr>
 
-    <!-- the <code> and <pre> HTML tags to include code examples -->
-    <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+        <!-- Headings Example -->
+        <h3> Headings : &lt;h1&gt; - &lt;h6&gt;</h3>
+        <p><i>This tag is used to define HTML headings in different sizes.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;</code></pre>
-    
-    <h3> Paragraph : &lt;p&gt;</h3>
-    <p><i>The &lt;p&gt; tag defines a paragraph.Browsers automatically add a single blank line before and after each &lt;/p&gt; element.</i></p>
-    <p>example:</p>
-    <pre><code> &lt;p&gt; This is some text in a paragraph. &lt;/p&gt;</code></pre>
 
-    <h3>Line Break Tag : &lt;br&gt; </h3>
-    <p><i>The &lt;br&gt; tag inserts a single line break.</i></p>
-    <p>example:</p>
-    <pre><code> &lt;/p&gt;To force &lt;br&gt; line breaks&lt;br&gt; in a text,&lt;br&gt; use the br&lt;br&gt; element.&lt;/p&gt;</code></pre>
+        <!-- Paragraph Example -->
+        <h3> Paragraph : &lt;p&gt;</h3>
+        <p><i>The &lt;p&gt; tag defines a paragraph. Browsers automatically add a single blank line before and after each paragraph.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;p&gt; This is some text in a paragraph. &lt;/p&gt;</code></pre>
 
-    <h3>Horizontal Line : &lt;hr&gt; </h3>
-    <p><i>The &lt;hr&gt; tag defines a thematic break in an HTML page</i></p>
-    <p>example:</p>
-    <pre><code> &lt;p&gt;HTML is the standard markup language for creating Web pages.&lt;/p&gt; <br> &lt;hr&gt; <br> &lt;p&gt;CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media.&lt;/p&gt;;</code></pre>
-    
-    <h3>Italics Tag</h3>
-    <p><i>The &lt;i&gt; tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</i></p>
-    <p>example:</p>
-    <pre><code> &lt;p&gt; &lt;i&gt; Lorem ipsum&lt;/i&gt; is the most popular filler text in history.&lt;/p&gt;</code></pre>
-    
-    <h3>Bold Tag : &lt;b&gt;</h3>
-    <p><i>The &lt;b&gt; tag is used to draw attention to text by making it bold, without implying importance.</i></p>
-    <p>example:</p>
-    <pre><code>&lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; statement.&lt;/p&gt;</code></pre>
+        <!-- Line Break Example -->
+        <h3>Line Break Tag : &lt;br&gt;</h3>
+        <p><i>The &lt;br&gt; tag inserts a single line break.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;p&gt;To force&lt;br&gt;line breaks&lt;br&gt;in a text,&lt;br&gt;use the br&lt;br&gt;element.&lt;/p&gt;</code></pre>
 
-    <h3>Image Tag : &lt;img&gt;</h3>
-    <p><i>The &lt;img&gt; tag is used to embed images in an HTML page. It requires the 'src' and 'alt' attributes.</i></p>
-    <p>example:</p>
-    <pre><code>&lt;img src="image.jpg" alt="Example Image" width="300"&gt;</code></pre>
+        <!-- Horizontal Line Example -->
+        <h3>Horizontal Line : &lt;hr&gt;</h3>
+        <p><i>The &lt;hr&gt; tag defines a thematic break in an HTML page.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;p&gt;HTML is the standard markup language for creating Web pages.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;CSS is a language that describes how HTML elements are to be displayed.&lt;/p&gt;</code></pre>
 
-    <h3>Anchor Tag : &lt;a&gt;</h3>
-    <p><i>The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.</i></p>
-    <p>example:</p>
-    <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+        <!-- Italics Tag Example -->
+        <h3>Italics Tag</h3>
+        <p><i>The &lt;i&gt; tag defines a part of text in an alternate voice or mood. The content is usually displayed in italics.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;p&gt; &lt;i&gt;Lorem ipsum&lt;/i&gt; is the most popular filler text in history.&lt;/p&gt;</code></pre>
 
-    <h3>List Tags : &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</h3>
-    <p><i>The &lt;ul&gt; tag creates an unordered list, &lt;ol&gt; creates an ordered list, and &lt;li&gt; defines each list item.</i></p>
-    <p>example:</p>
-    <pre><code>&lt;ul&gt;
+        <!-- Bold Tag Example -->
+        <h3>Bold Tag : &lt;b&gt;</h3>
+        <p><i>The &lt;b&gt; tag is used to draw attention to text by making it bold, without implying importance.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; statement.&lt;/p&gt;</code></pre>
+
+        <!-- Image Tag Example -->
+        <h3>Image Tag : &lt;img&gt;</h3>
+        <p><i>The &lt;img&gt; tag is used to embed images. It requires the 'src' and 'alt' attributes.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;img src="image.jpg" alt="Example Image" width="300"&gt;</code></pre>
+
+        <!-- Anchor Tag Example -->
+        <h3>Anchor Tag : &lt;a&gt;</h3>
+        <p><i>The &lt;a&gt; tag defines a hyperlink to navigate between pages.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+
+        <!-- List Tags Example -->
+        <h3>List Tags : &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</h3>
+        <p><i>The &lt;ul&gt; tag creates an unordered list, &lt;ol&gt; creates an ordered list, and &lt;li&gt; defines list items.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;ul&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
 &lt;/ul&gt;
@@ -83,64 +96,73 @@
   &lt;li&gt;Second&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 
-    <h3>Div Tag : &lt;div&gt;</h3>
-    <p><i>The &lt;div&gt; tag is a block-level container used to group elements and apply CSS styling or JavaScript functions.</i></p>
-    <p>example:</p>
-    <pre><code>&lt;div class="container"&gt;Content goes here&lt;/div&gt;</code></pre>
+        <!-- Div Tag Example -->
+        <h3>Div Tag : &lt;div&gt;</h3>
+        <p><i>The &lt;div&gt; tag is a block-level container used to group elements for styling or scripting.</i></p>
+        <p>Example:</p>
+        <pre><code>&lt;div class="container"&gt;Content goes here&lt;/div&gt;</code></pre>
 
-    <hr>
-<!-- css properties with the tags and examples  -->
-    <h1 id="css-tags">CSS Properties</h1>
+        <hr>
 
-    <h3>Color</h3>
-    <p><i>The <code>color</code> property sets the color of the text.</i></p>
-    <pre><code>p {
+        <!-- CSS PROPERTIES SECTION -->
+        <h1 id="css-tags">CSS Properties</h1>
+
+        <!-- Color -->
+        <h3>Color</h3>
+        <p><i>Sets the color of the text.</i></p>
+        <pre><code>p {
   color: blue;
 }</code></pre>
 
-    <h3>Background-color</h3>
-    <p><i>This property sets the background color of an element.</i></p>
-    <pre><code>div {
+        <!-- Background Color -->
+        <h3>Background-color</h3>
+        <p><i>Sets the background color of an element.</i></p>
+        <pre><code>div {
   background-color: white;
 }</code></pre>
 
-    <h3>Font-family</h3>
-    <p><i>Specifies the typeface (font) of the text.</i></p>
-    <pre><code>body {
+        <!-- Font Family -->
+        <h3>Font-family</h3>
+        <p><i>Specifies the typeface for the text.</i></p>
+        <pre><code>body {
   font-family: 'Overpass', sans-serif;
 }</code></pre>
 
-    <h3>Font-size</h3>
-    <p><i>Controls the size of the text.</i></p>
-    <pre><code>h1 {
+        <!-- Font Size -->
+        <h3>Font-size</h3>
+        <p><i>Controls the size of the text.</i></p>
+        <pre><code>h1 {
   font-size: 30px;
 }</code></pre>
 
-    <h3>Margin</h3>
-    <p><i>Defines space around elements outside the border.</i></p>
-    <pre><code>div {
+        <!-- Margin -->
+        <h3>Margin</h3>
+        <p><i>Creates space outside an element's border.</i></p>
+        <pre><code>div {
   margin: 20px;
 }</code></pre>
 
-    <h3>Padding</h3>
-    <p><i>Defines space inside the border, between the border and the content.</i></p>
-    <pre><code>div {
+        <!-- Padding -->
+        <h3>Padding</h3>
+        <p><i>Creates space inside an element’s border.</i></p>
+        <pre><code>div {
   padding: 15px;
 }</code></pre>
 
-    <h3>Border</h3>
-    <p><i>Used to set the border around an element.</i></p>
-    <pre><code>img {
+        <!-- Border -->
+        <h3>Border</h3>
+        <p><i>Defines the border around an element.</i></p>
+        <pre><code>img {
   border: 2px solid black;
 }</code></pre>
 
-    <h3>Text-align</h3>
-    <p><i>Specifies the horizontal alignment of text.</i></p>
-    <pre><code>p {
+        <!-- Text Alignment -->
+        <h3>Text-align</h3>
+        <p><i>Aligns text horizontally within an element.</i></p>
+        <pre><code>p {
   text-align: center;
 }</code></pre>
 
-</div>
-
+    </div> <!-- End of content -->
 </body>
 </html>
