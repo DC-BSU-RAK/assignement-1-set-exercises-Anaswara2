@@ -2,63 +2,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web Dev Study Planner</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Page Title -->
+  <title>Creative Computing - Web Dev Study Plan</title>
+  
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="bonusstyle.css">
 </head>
 <body>
+  <!-- Header with main title and subtitle -->
+  <header>
+    <h1>Web Development Study Plan</h1>
+    <p>Creative Computing Module</p>
+  </header>
 
-  <div class="container"><!--container for layout -->
+  <!-- Navigation bar for internal links -->
+  <nav>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Header -->
-    <header>
-      <h1>Web Development Study Planner</h1>
-    </header>
+  <!-- Main content area split into three columns -->
+  <main>
+    <!-- First column: overview section -->
+    <section class="column" id="overview">
+      <h2>Module Overview</h2>
+      <p>This module focuses on learning HTML, CSS, and JavaScript to create engaging, responsive web applications. You'll explore design thinking, accessibility, and UX principles.</p>
+    </section>
 
-    <!-- Navigation -->
-    <nav>
+    <!-- Second column: goals section -->
+    <section class="column" id="goals">
+      <h2>Study Goals</h2>
       <ul>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Progress</a></li>
+        <li>Understand semantic HTML</li>
+        <li>Master CSS Flexbox and Grid</li>
+        <li>Explore responsive design</li>
+        <li>Practice with JavaScript fundamentals</li>
+        <li>Build a final personal website</li>
       </ul>
-    </nav>
+      <!-- Interactive button-->
+      <button>Mark All As Done ✅</button>
+    </section>
 
-    <!-- Main Content Area -->
-    <main>
+    <!-- Third column: list of useful resources -->
+    <section class="column" id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+        <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+        <li><a href="https://web.dev/">Google Web.dev</a></li>
+        <li><a href="https://freecodecamp.org">freeCodeCamp</a></li>
+        <li><a href="https://w3schools.com">W3Schools</a></li>
+      </ul>
+    </section>
+  </main>
 
-      <!-- Column on the left side -->
-      <section class="column left">
-        <h2>Upcoming Tasks</h2>
-        <ul>
-          <li>Read HTML & CSS guide</li>
-          <li>Watch HTML tutorial</li>
-          <li>Build a static webpage</li>
-          <li>Submit weekly reflection</li>
-          <li>Group project planning</li>
-        </ul>
-      </section>
-
-      <!-- Column on the right side -->
-      <section class="column right">
-        <h2>Today's Focus</h2>
-        <article>
-          <h3>Layout Practice</h3>
-          <p>Work on positioning and alignment using Flexbox. Try responsive layouts and media queries.</p>
-          <button>Mark as Done</button>
-        </article>
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Creative Computing - Study Planner  Web App</p>
-    </footer>
-
-  </div>
-
+  <!-- Footer with copyright -->
+  <footer>
+    <p>&copy; 2025 Creative Computing | Designed by Anshu</p>
+  </footer>
 </body>
 </html>
