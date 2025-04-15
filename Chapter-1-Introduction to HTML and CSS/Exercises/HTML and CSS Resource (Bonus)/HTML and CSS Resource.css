@@ -1,66 +1,73 @@
-/* css for HTML and CSS Resource (Bonus)  */
+/* CSS for HTML and CSS Resource (Bonus) */
 
-body{
-    background-color: rgb(216, 184, 230);
+/* Background color for the entire page */
+body {
+    background-color: rgb(216, 184, 230); /* Light purple background */
 }
 
-/* to style the horizontal line and give color to it  */
+/* Styling for the horizontal rule (hr) to change color and height */
 hr {
-    height: 2px;
-    background-color:  rgb(216, 184, 230);
+    height: 2px; 
+    background-color: rgb(216, 184, 230); 
 }
 
-/* to style the main headings  */
-h1{
-    font-family: "Special Gothic Expanded One", sans-serif;
-    color: #000;
-    background-color:  rgb(225, 197, 237);
+/* Main heading (h1) styling */
+h1 {
+    font-family: "Special Gothic Expanded One", sans-serif; 
+    color: #000; 
+    background-color: rgb(225, 197, 237); 
 }
 
-#P01{
-    font-family: "Overpass", sans-serif;
-    background-color: #ffffff;
-    border: 2px solid #ddd;
-    padding: 40px;
-    max-width: 1000px;
-    margin: auto;
+/* Styling for the main content container */
+#P01 {
+    font-family: "Overpass", sans-serif; 
+    background-color: #ffffff; 
+    border: 2px solid #ddd; 
+    padding: 40px; 
+    max-width: 1000px; 
+    margin: auto; 
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
 }
 
+/* Styling for smaller headings (h3) */
 h3 {
-    margin-top: 25px;
-    color: #2e0e38;
-    font-size: 22px;
-    border-left: 5px solid #440655;
-    padding-left: 10px;
+    margin-top: 25px; 
+    color: #2e0e38; 
+    font-size: 22px; 
+    border-left: 5px solid #440655; 
+    padding-left: 10px; 
 }
 
+/* Styling for subheadings (h4) */
 h4 {
-    color: #2e0e38;
+    color: #2e0e38; 
     font-weight: normal;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 20px; 
+    text-align: center; 
 }
 
-/* to navigate to the section further down the page  */
+/* Navigation links styling */
 .nav-links {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 18px;
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 18px; 
 }
 
+/* Styling for the navigation links */
 .nav-links a {
-    color: #000000;
-    margin: 0 10px;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #000000; 
+    margin: 0 10px; 
+    font-weight: bold; 
+    transition: color 0.3s; 
 }
 
+/* Hover effect for navigation links */
 .nav-links a:hover {
-    color: #000000;
+    color: #000000; 
 }
 
+/* Smooth scrolling behavior for the page */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
